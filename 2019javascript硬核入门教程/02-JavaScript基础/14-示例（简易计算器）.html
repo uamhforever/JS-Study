@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14-示例（简易计算器）</title>
+  </head>
+  <body>
+    <script>
+      /*
+        1. 弹出一个输入框，提示用户输入第一个操作数
+        2. 弹出一个输入框，提示用户输入操作符
+        3. 弹出一个输入框，提示用户输入第二个操作数
+        4. 将两个数据计算后输出（控制台或者alert）
+        */
+      var a = +prompt('请输入第一个数')
+      var sym = prompt('请输入运算符')
+      var b = +prompt('请输入第二个数')
+      /*
+      将字符串型数据转换成number型
+      方法一： parseInt() parseFloat()
+      方法二： 在prompt前加上算术运算符+ 
+      */
+      var sum
+      switch (sym) {
+        case '+':
+          sum = a + b
+          break
+        case '-':
+          sum = a - b
+          break
+        case '*':
+          sum = a * b
+          break
+        case '/':
+          sum = a / b
+          break
+
+        default:
+          alert('您输入的操作符有误')
+          break
+      }
+      alert(sum)
+    </script>
+  </body>
+</html>

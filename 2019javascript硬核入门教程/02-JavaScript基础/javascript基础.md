@@ -196,6 +196,26 @@ var a
       先乘除，后加减。
    3. 复杂的运算
 
+   ```javascript
+   Math.pow(2, 53) // --> 9007199254740992：2的53次幂
+   Math.round(0.6) // --> 1.0：四舍五入
+   Math.ceil(0.6) // --> 1.0：向上取整
+   Math.floor(0.6) // --> 0.0：向下取整
+   Math.abs(-5) // --> 5 ：求绝对值
+   Math.max(x, y, z) // 返回最大值
+   Math.min(x, y, z) // 返回最小值
+   Math.random() // 生产一个大于等于0小于1的伪随机数
+   Math.PI // π：圆周率
+   Math.E // e：自然对数的底数
+   Math.sqrt(3) // 3的平方根
+   Math.pow(3, 1 / 3) // 3的立方根
+   Math.sin(0) // 三角函数：其它还有Math.cos、Math.atan等
+   Math.log(10) // 10的自然对数
+   Math.log(100) / Math.LN10 // 以10为底，100的对数
+   Math.log10(512) / Math.LN2 // 以2为底
+   Math.exp(3) // e的三次幂
+   ```
+
 2. 关系运算符
 3. 位运算符
 4. 逻辑运算符
