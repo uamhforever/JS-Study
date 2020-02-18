@@ -17,6 +17,15 @@
 
       var bmi = weight / Math.pow(height, 2)
       alert(bmi)
+
+      /*
+      随机产生一个0-9之间的整数
+      提示用户输入一个0-9之间的整数
+      比较这两个整数的大小关系
+      */
+      var a = Math.floor(Math.random() * 10)
+      var b = Math.floor(+prompt('输入一个0-9之间的整数'))
+      console.log(a, a >= b ? '>=' : '<', b)
     </script>
   </body>
 </html>
