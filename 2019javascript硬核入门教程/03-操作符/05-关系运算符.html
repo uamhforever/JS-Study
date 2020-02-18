@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-关系运算符</title>
+  </head>
+  <body>
+    <script>
+      /*
+        > < >= <= == != === !==
+        关系运算符的计算结果只能是布尔值：true false
+        表达式成立，则结果为true
+        表达式不成立，则结果为false
+        */
+
+      var a = 1
+      var b = 2
+      var c = a > b // --> false
+      console.log(c)
+
+      var d = 'hello'
+      var e = 'hi'
+      var f = d > e // --> false
+      console.log(f)
+
+      console.log(10 >= 10) // --> true
+
+      console.log(10 == 10) // --> true
+
+      console.log(5 != 6) // --> true
+
+      console.log('************')
+      // == 等于 与 不等于 != ，只校验内容，不校验类型
+      // == 与 != 存在类型转换问题
+      console.log(10 == 10) // --> true
+      console.log(10 == '10') // --> true 转换后相等
+      console.log(10 === 10) // --> true
+      console.log(10 === '10') // --> false
+    </script>
+  </body>
+</html>

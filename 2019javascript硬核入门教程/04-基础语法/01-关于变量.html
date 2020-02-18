@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-关于变量</title>
+  </head>
+  <body>
+    <script>
+      var a
+      console.log(a) // --> undefined 表示只声明，未赋值
+
+      // console.log(b) // error 会导致程序中断，不再向下执行
+
+      var c = 3
+      console.log(c)
+
+      // 变量提升
+      console.log(d) // --> undefined
+      var d = 3
+    </script>
+  </body>
+</html>

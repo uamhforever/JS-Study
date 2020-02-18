@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09-小游戏</title>
+  </head>
+  <body>
+    <script>
+      /*
+          游戏1：石头剪刀布
+          1. 玩家双方：player computer
+          2. 约定：
+              剪刀 0
+              石头 1
+              布   2
+          3. 判断输赢的方法
+              总结一下player赢的情况
+              player == 0 && computer == 2
+              player == 1 && computer == 0
+              player == 2 && computer == 1
+              */
+      var player = Math.floor(Math.random() * 3)
+      var computer = Math.floor(Math.random() * 3)
+      var lis = { 0: '剪刀', 1: '石头', 2: '布' }
+      var result =
+        (player === 0 && computer === 2) ||
+        (player === 1 && computer === 0) ||
+        (player === 2 && computer === 1)
+      var res
+      if (player === computer) {
+        res = '平局'
+      } else if (
+        (player === 0 && computer === 2) ||
+        (player === 1 && computer === 0) ||
+        (player === 2 && computer === 1)
+      ) {
+        res = '赢'
+      } else {
+        res = '输'
+      }
+      //console.log(lis[player], lis[computer], result, res)
+      console.log(
+        `player: ${lis[player]}\ncomputer: ${lis[computer]}\n结果：${res}`
+      )
+    </script>
+  </body>
+</html>

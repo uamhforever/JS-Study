@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-汉字区间</title>
+  </head>
+  <body>
+    <div id="box"></div>
+
+    <script>
+      var s = ''
+      var count = 0
+      for (var i = '\u4e00'; i < '\u9fa5'; i++) {
+        count++
+        var c = String.fromCharCode(i)
+        s += count + ':' + c + '&nbsp;&nbsp;&nbsp;&nbsp;'
+        if (count % 30 === 0) {
+          s += '<br />'
+        }
+      }
+
+      console.log(s)
+      console.log(count)
+      document.getElementById('box').innerHTML = s
+    </script>
+  </body>
+</html>
