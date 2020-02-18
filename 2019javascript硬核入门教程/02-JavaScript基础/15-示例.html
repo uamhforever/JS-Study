@@ -6,6 +6,17 @@
     <title>15-示例</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      /*
+        BMI指数（身体质量指数，简称体质指数又称体重指数，英文为Body Mass Index，简称BMI），
+        是用体重公斤数除以身高米数平方得出的数字，是目前国际上常用的衡量人体胖瘦程度以及
+        是否健康的一个标准。
+        */
+      var weight = +prompt('请输入您的体重（公斤）')
+      var height = +prompt('请输入您的身高（米）')
+
+      var bmi = weight / Math.pow(height, 2)
+      alert(bmi)
+    </script>
   </body>
 </html>
