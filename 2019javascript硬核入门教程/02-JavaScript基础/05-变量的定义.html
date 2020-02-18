@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5-变量的定义</title>
+  </head>
+  <body>
+    <script>
+      // var 变量名；开辟一块内存空间，给其命名为变量名
+      var userName // 只声明 不复制
+
+      // var 变量名 = 变量的值；变量的值可以是一个直接量，也可以是另一个变量，或者是一个表达式
+      var x = 10
+      console.log(x)
+
+      // 为变量重新赋值
+      x = 'hello'
+      console.log(x)
+
+      var y = x
+      console.log(y)
+
+      // 不使用var关键字，不推荐使用这种定义变量的方式
+      z = 'hi'
+      console.log(z)
+    </script>
+  </body>
+</html>

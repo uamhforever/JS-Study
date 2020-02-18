@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12-取余运算</title>
+  </head>
+  <body>
+    <script>
+      var x = 10
+      var y = 3
+      var z = x % y
+      console.log(z)
+
+      var t = 456
+      var a = t % 10 // 获取个位数字
+      var b = Math.floor((t % 100) / 10) // 获取十位数字
+      var c = Math.floor(t / 100) // 获取百位数字
+
+      console.log(c, b, a)
+    </script>
+  </body>
+</html>
